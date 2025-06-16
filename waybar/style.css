@@ -48,20 +48,24 @@ window#waybar {
 #clock{
 	background-color: transparent;
 }
-#battery,
 #cpu,
 #memory,
 #temperature,
 #network,
-#pulseaudio,
 #custom-media,
 #mode,
 #custom-power,
 #custom-menu,
 #tray,
+#battery{
+	margin: 2px 5px;
+}
+#pulseaudio{
+	margin:2px 8px;
+}
 #bluetooth{
 	font-size:16px;
-	margin: 2px 8px; 
+	margin: 2px 8px 0 8px; 
 }
 #idle_inhibitor {
     padding: 0 10px;

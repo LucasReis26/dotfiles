@@ -1,0 +1,117 @@
+* {
+    border: none;
+    font-family: Font Awesome, Roboto, Arial, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+window {
+	font-weight: bold;
+}
+window#waybar {
+    background: rgba(21, 21, 21, 0.85);
+}
+/*-----module groups----*/
+.modules-right {
+	background-color:transparent;
+    margin: 2px 10px 0 0;
+}
+.modules-center {
+	background-color: transparent;
+    margin: 2px 0 0 0;
+}
+.modules-left {
+    margin: 2px 0 0 10px;
+	background-color:transparent;
+}
+/*-----modules indv----*/
+#tray menu{
+	background-color: rgba(21,21,21,1)
+}
+#workspaces button {
+    padding: 1px 5px;
+    background-color: transparent;
+}
+#workspaces button:hover {
+	box-shadow: none;
+	text-shadow: none;
+	background: none;
+	transition: none;
+	background-color: rgba(51,51,51,0.85);
+}
+
+#workspaces button.active {
+	background-color: rgba(51,51,51,0.85);
+}
+
+#clock{
+	background-color: transparent;
+}
+#cpu,
+#memory,
+#temperature,
+#network,
+#custom-media,
+#mode,
+#custom-power,
+#custom-menu,
+#tray,
+#battery{
+	margin: 2px 5px;
+}
+#pulseaudio{
+	margin:2px 8px;
+}
+#bluetooth{
+	font-size:16px;
+	margin: 2px 8px 0 8px; 
+}
+#idle_inhibitor {
+    padding: 0 10px;
+	background-color: transparent
+}
+#mode {
+    color: #cc3436;
+    font-weight: bold;
+}
+#custom-power {
+    background-color: transparent;
+    border-radius: 25%;
+    margin: 5px 5px;
+    padding: 1px 1px 1px 10px;
+}
+
+#custom-power:hover{
+	background-color:rgba(51,51,51,0.85)
+}
+/*-----Indicators----*/
+#idle_inhibitor.activated {
+    color: #2dcc36;
+}
+#pulseaudio.muted {
+    color: #cc3436;
+}
+#battery.charging {
+    color: #2dcc36;
+}
+#battery.warning:not(.charging) {
+	color: #e6e600;
+}
+#battery.critical:not(.charging) {
+    color: #cc3436;
+}
+#temperature.critical {
+    color: #cc3436;
+}
+#custom-power menu{
+	background-color: black;
+	color: white;
+}
+/*-----Colors----*/
+/*
+ *rgba(0,85,102,1),#005566 --> Indigo(dye)
+ *rgba(0,43,51,1),#002B33 --> Dark Green 
+ *rgba(0,153,153,1),#009999 --> Persian Green 
+ *
+ */

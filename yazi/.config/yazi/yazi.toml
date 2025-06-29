@@ -1,4 +1,4 @@
-[open]
-prepend_rules=[
-	{name = "*.mkv", use = "flatpak run org.videolan.VLC"},
+[opener]
+play = [
+	{ run = 'flatpak run org.videolan.VLC "$1"', orphan = true },
 ]

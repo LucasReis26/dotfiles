@@ -1,0 +1,4 @@
+[open]
+prepend_rules=[
+	{name = "*.mkv", use = "flatpak run org.videolan.VLC"},
+]

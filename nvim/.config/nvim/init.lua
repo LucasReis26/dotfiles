@@ -20,6 +20,12 @@ vim.keymap.set('n','<leader>yy','"+yy')
 vim.keymap.set('n','<leader>p','"+p')
 vim.keymap.set('i','jj','<esc>')
 
+vim.keymap.set('n','<esc>',function()
+	if vim.v.hlsearch == 1 then
+		vim.cmd('nohlsearch')
+	end
+end, {silent = true})
+
 vim.api.nvim_create_autocmd("TermOpen",{
 	pattern="*",
 	callback = function()

@@ -1,6 +1,6 @@
 {
   "Comment.nvim": { "branch": "master", "commit": "e51f2b142d88bb666dcaa77d93a07f4b419aca70" },
-  "catppuccin": { "branch": "main", "commit": "1bf070129c0b6f77cc23f6a2212dcdc868308c52" },
+  "catppuccin": { "branch": "main", "commit": "fa42eb5e26819ef58884257d5ae95dd0552b9a66" },
   "coc.nvim": { "branch": "release", "commit": "72bb402f09230efb27d6500986ff85fd09dd4c4c" },
   "cord.nvim": { "branch": "master", "commit": "13e72572f151d531c31822ce38c8a13cc1355328" },
   "indent-blankline.nvim": { "branch": "master", "commit": "005b56001b2cb30bfa61b7986bc50657816ba4ba" },

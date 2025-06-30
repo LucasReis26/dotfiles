@@ -4,7 +4,6 @@ vim.keymap.set('n','<c-j>',':wincmd j<CR>')
 vim.keymap.set('n','<c-h>',':wincmd h<CR>')
 
 require('config.lazy')
-vim.cmd([[colorscheme catppuccin-frappe]]);
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.cindent = true
@@ -36,6 +35,5 @@ vim.api.nvim_create_autocmd("TermOpen",{
 })
 
 vim.g.db_ui_env_variable_url = 'DATABASE_URL'
-
 
 

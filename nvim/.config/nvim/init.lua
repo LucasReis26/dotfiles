@@ -16,6 +16,9 @@ vim.cmd('syntax enable')
 
 vim.keymap.set('n','<c-t>', ':split<cr><c-w>j:term<cr>:res 10<cr>i')
 vim.keymap.set('t','<esc><esc>','<c-\\><c-n>')
+vim.keymap.set('v','<leader>y','"+y')
+vim.keymap.set('n','<leader>yy','"+yy')
+yim.keymap.set('n','<leader>p','"+p')
 
 vim.api.nvim_create_autocmd("TermOpen",{
 	pattern="*",

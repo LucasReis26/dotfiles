@@ -20,6 +20,7 @@ vim.keymap.set('n','<leader>yy','"+yy')
 vim.keymap.set('n','<leader>p','"+p')
 vim.keymap.set('i','jj','<esc>')
 vim.keymap.set('n','<leader>=','gg0vG$=')
+vim.opt.conceallevel = 1
 
 vim.keymap.set('n','<esc>',function()
 	if vim.v.hlsearch == 1 then

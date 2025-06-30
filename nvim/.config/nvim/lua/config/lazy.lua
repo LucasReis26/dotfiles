@@ -25,7 +25,7 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		-- import your plugins
-		{"catppuccin/nvim", name = "catppuccin", priority = 1000, version = "*", config = function() vim.cmd.colorscheme "catppuccin-frappe" end},
+		{"catppuccin/nvim", name = "catppuccin", priority = 1000, config = function() vim.cmd.colorscheme "catppuccin-frappe" end},
 		{ import = "plugins" },
 	},
 	-- Configure any other settings here. See the documentation for more details.

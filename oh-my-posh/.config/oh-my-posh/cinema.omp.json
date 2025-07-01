@@ -9,7 +9,8 @@
 		"bg-shadow" : "#292D3D",
 		"ice" : "#E2E8DD",
 		"pink" : "#FF7099",
-		"green" : "#40F99B"
+		"green" : "#40F99B",
+		"yellow" : "#DCBF04"
 	},
 	"blocks": [
 		{
@@ -66,7 +67,7 @@
 					"style": "powerline",
 					"powerline_symbol": "\ue0b0",
 					"foreground_templates": [
-						"{{ if or (.Working.Changed) (.Staging.Changed) }}#FF9248{{ end }}",
+						"{{ if or (.Working.Changed) (.Staging.Changed) }}p:yellow{{ end }}",
 						"{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ff4500{{ end }}",
 						"{{ if gt .Ahead 0 }}#B388FF{{ end }}",
 						"{{ if gt .Behind 0 }}#B388FF{{ end }}"

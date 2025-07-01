@@ -27,6 +27,6 @@ return {
 
 			ui = { 
 				enable = false }
-			-- see below for full list of options 👇
-		},
-	}
+				-- see below for full list of options 👇
+			},
+		}

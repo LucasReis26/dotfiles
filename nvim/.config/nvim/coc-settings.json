@@ -9,5 +9,6 @@
 		"text":"html",
 		"markdown":"html"
 	},
-	"emmet.excludeLanguages": [ ],
+  "emmet.excludeLanguages": [],
+  "snippets.ultisnips.pythonPrompt": false,
 }

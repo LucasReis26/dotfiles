@@ -4,7 +4,10 @@
 	"modules-right": ["tray", "custom/scratchpad-indicator","network","bluetooth", "pulseaudio","battery", "custom/power"],
 	"output":"DP-1",
 	"hyprland/workspaces": {
-		"all-outputs": true
+		"all-outputs": true,
+		"ignore-workspaces":[
+			"(11)"
+		]
 	},
 	"battery": {
 		"states": {

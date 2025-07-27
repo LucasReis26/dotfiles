@@ -47,7 +47,6 @@
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 		// "format-alt": "{:%Y-%m-%d}",
 		"format":"{:%b %d\t%I:%M %p}",
-		"on-click": "gnome-calendar"
 	},
 	"pulseaudio": {
 		"format": "{volume}% {icon} ",

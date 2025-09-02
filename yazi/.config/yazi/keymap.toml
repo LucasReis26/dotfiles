@@ -1,5 +1,3 @@
 [[mgr.prepend_keymap]]
-on   = [ "<C-n>" ]
-run = '''
-	flatpak run it.mijorus.collector
-'''
+on  = "<C-n>"
+run = 'shell -- dragon -x -i -T "$@"'

@@ -1,7 +1,7 @@
 {
 	"modules-left": ["hyprland/workspaces"],
 	"modules-center": ["clock", "idle_inhibitor"],
-	"modules-right": ["tray", "custom/scratchpad-indicator","network","bluetooth", "pulseaudio","battery", "custom/power"],
+	"modules-right": ["tray", "custom/scratchpad-indicator","custom/updates","network","bluetooth", "pulseaudio","battery", "custom/power"],
 	"output":"DP-1",
 	"hyprland/workspaces": {
 		"all-outputs": true,
@@ -23,6 +23,16 @@
 		// "format-good": "", // An empty format will hide the module
 		// "format-full": "",
 		"format-icons": ["", "", "", "", ""]
+	},
+	"custom/updates": {
+		"format": "{} {icon}",
+		"return-type": "json",
+		"format-icons": {
+			"has-updates": "󱍷",
+			"updated": "󰂪"
+		},
+		"exec-if": "which waybar-module-pacman-updates",
+		"exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
 	},
 
 	"network": {

@@ -108,6 +108,9 @@ window#waybar {
 	background-color: black;
 	color: white;
 }
+#custom-updates {
+	background-color: transparent;
+}
 /*-----Colors----*/
 /*
  *rgba(0,85,102,1),#005566 --> Indigo(dye)

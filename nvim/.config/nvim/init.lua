@@ -11,6 +11,7 @@ vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.guifont = "FiraCode_Nerd_Font:h14"
 vim.cmd('syntax enable')
+vim.opt.mouse="a"
 
 vim.keymap.set('n','<c-t>', ':split<cr><c-w>j:term<cr>:res 10<cr>i')
 vim.keymap.set('t','<esc><esc>','<c-\\><c-n>')

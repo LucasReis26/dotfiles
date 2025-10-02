@@ -4,8 +4,26 @@ anchor=top-center
 icons=1
 background-color=#202020FF
 border-color=#151515FF
+outer-margin=30
 border-radius=10
 padding=20
 width=400
 height=150
-font='FiraCode Nerd Font' 10
+font='FiraCode Nerd Font Propo' 10
+
+[app-name=brightness]
+output=eDP-1
+default-timeout=5000
+anchor=bottom-center
+icons=1
+background-color=#202020FF
+border-color=#151515FF
+border-radius=10
+width=300
+height=30
+padding=3, 0, 3, 0
+outer-margin=40
+font='FiraCode Nerd Font Prop' 14
+max-icon-size=28
+text-alignment=right
+

@@ -22,7 +22,7 @@ border-radius=10
 width=300
 height=30
 padding=3, 0, 3, 0
-font='FiraCode Nerd Font Prop' 14
+font='FiraCode Nerd Font Prop' 12
 max-icon-size=28
 text-alignment=right
 

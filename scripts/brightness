@@ -1,0 +1,22 @@
+#! /bin/bash
+
+if [ "$1" = "up" ]; then
+	makoctl dismiss && 
+	brightnessctl s 10%+ && 
+	current=$(brightnessctl g) && 
+	max=$(brightnessctl m) && 
+	percentage=$((current * 100/max)) && 
+	notify-send -a "brightness" -i "$HOME/.icons/display-brightness.svg" "$((percentage))%" "" -h int:value:$((percentage))
+elif [ "$1" = "down" ]; then
+	makoctl dismiss && 
+	brightnessctl s 10%- && 
+	current=$(brightnessctl g) && 
+	max=$(brightnessctl m) && 
+	percentage=$((current * 100/max)) && 
+	notify-send -a "brightness" -i "$HOME/.icons/display-brightness.svg" "$((percentage))%" "" -h int:value:$((percentage))
+else
+	echo "erro"
+fi
+
+
+

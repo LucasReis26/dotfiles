@@ -34,6 +34,8 @@ vim.api.nvim_create_autocmd("TermOpen",{
 	end
 })
 
+require 'hex'.setup()
+
 vim.g.db_ui_env_variable_url = 'DATABASE_URL'
 
 

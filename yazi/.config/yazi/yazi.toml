@@ -1,4 +1,7 @@
 [opener]
 play = [
-	{ run = 'flatpak run org.videolan.VLC "$1"', orphan = true },
+{ run = 'flatpak run org.videolan.VLC "$1"', orphan = true },
+]
+open = [
+	{ run = 'zen-browser "$1"', orphan = true },
 ]

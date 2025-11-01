@@ -1,9 +1,0 @@
-#! /bin/bash
-
-if [ "$1" = "up" ]; then
-	echo "up"
-elif [ "$1" = "down" ]; then
-	echo "down"
-else
-	echo "erro"
-fi

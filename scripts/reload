@@ -1,10 +1,10 @@
 #! /bin/bash
 
-if ["$1" == desktop]; then
+if [ "$1" == "desktop" ]; then
 	pkill mpvpaper && mpvpaper ALL -o "--loop=inf --cache=no --demuxer-cache=no" /home/cinema/Documentos/wallpapers/lofi-cozy-house-rainy-night-moewalls-com.webm & disown; 
 	pkill waybar && waybar & disown; 
 	pkill mako && mako & disown;
-elif ["$1" == notebook]; then
+elif [ "$1" == "notebook" ]; then
 	pkill mpvpaper && mpvpaper eDP-1 -o "--loop=inf" /home/cinema/Insync/luctreis\@gmail.com/OneDrive/wallpapers/Frame\ 13.png & disown;
 	pkill waybar && waybar & disown; 
 	pkill mako && mako & disown;

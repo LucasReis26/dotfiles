@@ -1,6 +1,6 @@
 #! /bin/bash
 
-CURRENT=$(hyprctl activewindow | sed -n 's/.*floating: //p')
+CURRENT=$(hyprctl activewindow | sed -nE 's/.*floating: ([01])/\1/p')
 
 if [ "$CURRENT" == "0" ]; then
 	hyprctl dispatch setfloating active

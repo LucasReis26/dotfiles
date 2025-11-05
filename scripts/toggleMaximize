@@ -1,0 +1,10 @@
+#! /bin/bash
+
+CURRENT=$(hyprctl getoption dwindle:single_window_aspect_ratio | grep "vec2" | tr -d '[],' | awk '{print $2, $3}')
+
+if [ "$CURRENT" == "11 9" ]; then
+	hyprctl keyword 'dwindle:single_window_aspect_ratio' '16 9'
+elif [ "$CURRENT" == "16 9" ]; then
+	hyprctl keyword 'dwindle:single_window_aspect_ratio' '11 9'
+fi
+

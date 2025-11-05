@@ -1,10 +1,11 @@
 #! /bin/bash
 
-CURRENT=$(hyprctl getoption dwindle:single_window_aspect_ratio | grep "vec2" | tr -d '[],' | awk '{print $2, $3}')
+CURRENT=$(hyprctl activewindow | sed -n 's/.*floating: //p')
 
-if [ "$CURRENT" == "11 9" ]; then
-	hyprctl keyword 'dwindle:single_window_aspect_ratio' '16 9'
-elif [ "$CURRENT" == "16 9" ]; then
-	hyprctl keyword 'dwindle:single_window_aspect_ratio' '11 9'
+if [ "$CURRENT" == "0" ]; then
+	hyprctl dispatch setfloating active
+	hyprctl dispatch resizeactive exact 1876 1003
+	hyprctl dispatch moveactive exact 22 55
+elif [ "$CURRENT" == "1" ]; then
+	hyprctl dispatch settiled active
 fi
-

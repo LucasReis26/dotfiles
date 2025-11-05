@@ -1,0 +1,18 @@
+#! /bin/bash
+
+export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+
+DEVICE="$1"
+STATUS_FILE="$XDG_RUNTIME_DIR/touchpad.status"
+
+if [ ! -f "$STATUS_FILE" ];then
+	echo "true" > "$STATUS_FILE"
+else
+	if [ $(cat "$STATUS_FILE") = "true" ]; then
+		echo "false" > "$STATUS_FILE"
+		hyprctl keyword "device[$DEVICE]:enabled" false
+	else
+		echo "true" > "$STATUS_FILE"
+		hyprctl keyword "device[$DEVICE]:enabled" true
+	fi
+fi

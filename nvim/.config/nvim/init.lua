@@ -19,6 +19,7 @@ vim.keymap.set('v','<leader>y','"+y')
 vim.keymap.set('n','<leader>yy','"+yy')
 vim.keymap.set('n','<leader>p','"+p')
 vim.keymap.set('i','jj','<esc>')
+vim.keymap.set('n','<leader>l',':Lazy<cr>')
 vim.keymap.set('n','<leader>=','gg0vG$=')
 
 vim.keymap.set('n','<esc>',function()

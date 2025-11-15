@@ -23,10 +23,20 @@ return {
 					name = "personal",
 					path = "~/Insync/luctreis@gmail.com/OneDrive/obsidian",
 				},
+
+				-- other fields ...
+
+
 			},
 
-			ui = { 
-				enable = false }
-				-- see below for full list of options 👇
+			templates = {
+				folder = "./Assets/Templates",
+				date_format = "%Y-%m-%d-%a",
+				time_format = "%H:%M",
 			},
-		}
+			ui = { 
+				enable = false 
+			}
+			-- see below for full list of options 👇
+		},
+	}

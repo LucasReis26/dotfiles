@@ -35,6 +35,18 @@ vim.api.nvim_create_autocmd("TermOpen",{
 	end
 })
 
+vim.api.nvim_create_user_command("NewAC1", function()
+	local template = "~/obsidian/Assets/Templates/Arquitetura de Computadores I.md"
+	local note_dir = "~/obsidian/Estudos/Faculdade/4 Período/AC-I/Aulas/"
+	local file_name = "AULA " .. os.date("%Y-%m-%d_") .. ".md"
+	local file_path = vim.fn.expand(note_dir .. "/" .. file_name)
+	vim.cmd("edit " .. file_path)
+	if vim.fn.filereadable(vim.fn.expand(template)) == 1 then
+		vim.cmd("0r " .. template)
+	end
+	print("Nova nota criada: " .. file_path)
+end, {})
+
 require 'hex'.setup()
 
 vim.g.db_ui_env_variable_url = 'DATABASE_URL'

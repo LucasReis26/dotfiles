@@ -36,7 +36,8 @@ return {
 			},
 			ui = { 
 				enable = false 
-			}
+			},
+			disable_frontmatter = true,
 			-- see below for full list of options 👇
 		},
 	}

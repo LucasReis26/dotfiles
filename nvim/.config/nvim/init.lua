@@ -21,6 +21,8 @@ vim.keymap.set('n','<leader>p','"+p')
 vim.keymap.set('i','jj','<esc>')
 vim.keymap.set('n','<leader>l',':Lazy<cr>')
 vim.keymap.set('n','<leader>=','gg0vG$=')
+vim.keymap.set('n','<leader>nd',':NoiceDismiss<cr>')
+vim.keymap.set('n','<leader>oo',':ObsidianOpen<cr>')
 
 vim.keymap.set('n','<esc>',function()
 	if vim.v.hlsearch == 1 then
@@ -67,6 +69,8 @@ vim.api.nvim_create_user_command("NewLP", function()
 
 	vim.cmd("write")
 end ,{})
+
+
 
 require 'hex'.setup()
 

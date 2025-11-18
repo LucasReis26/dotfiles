@@ -52,7 +52,7 @@ end, {})
 
 vim.api.nvim_create_user_command("NewLP", function()
 
-	local note_dir = "~/obsidian/Estudos/Faculdade/4 Período/LP/"
+	local note_dir = string.format("~/obsidian/Estudos/Faculdade/4 Período/LP/%s/",os.date("%Y-%m"));
 	local file_path = string.format("%sAULA %s.md", note_dir, os.date("%Y-%m-%d"))
 
 	vim.cmd("edit " .. vim.fn.expand(file_path))
@@ -65,8 +65,8 @@ vim.api.nvim_create_user_command("NewLP", function()
 end ,{})
 
 
-
 require 'hex'.setup()
+require('git').setup()
 
 vim.g.db_ui_env_variable_url = 'DATABASE_URL'
 

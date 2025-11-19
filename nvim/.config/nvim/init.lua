@@ -38,7 +38,7 @@ vim.api.nvim_create_autocmd("TermOpen",{
 })
 
 vim.api.nvim_create_user_command("NewAC1", function()
-	local note_dir = "~/obsidian/Estudos/Faculdade/4 Período/AC-I/Aulas/"
+	local note_dir = string.format("~/obsidian/Estudos/Faculdade/4 Período/AC-I/Aulas/%s",os.date("%Y-%m"))
 	local file_path = string.format("%s/AULA %s.md", note_dir, os.date("%Y-%m-%d"))
 
 	vim.cmd("edit " .. vim.fn.expand(file_path))

@@ -1,0 +1,3 @@
+#! /bin/bash
+
+mpvpaper ALL -o "--loop=inf --cache=no --demuxer-cache=no" /home/cinema/Documentos/wallpapers/lofi-cozy-house-rainy-night-moewalls-com.webm

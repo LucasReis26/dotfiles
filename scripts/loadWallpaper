@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 start_mpvpaper() {
 	mpvpaper -o "--hwdec=nvdec --gpu-api=vulkan --loop-file=inf --no-audio" ALL ~/Insync/luctreis@gmail.com/OneDrive/wallpapers/sala.mp4

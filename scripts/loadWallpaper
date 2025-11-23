@@ -1,3 +1,16 @@
-#! /bin/bash
+#!/bin/bash
 
-mpvpaper ALL -o "--loop=inf --cache=no --demuxer-cache=no" /home/cinema/Documentos/wallpapers/lofi-cozy-house-rainy-night-moewalls-com.webm
+start_mpvpaper() {
+	mpvpaper -o "--hwdec=nvdec --gpu-api=vulkan --loop-file=inf --no-audio" ALL ~/Insync/luctreis@gmail.com/OneDrive/wallpapers/sala.mp4
+}
+
+kill_mpvpaper() {
+    killall mpvpaper
+}
+
+while true; do
+    start_mpvpaper
+    sleep 1800
+    kill_mpvpaper
+    sleep 1
+done

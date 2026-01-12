@@ -6,3 +6,4 @@ vim.o.shiftwidth = 4
 vim.o.guifont = "FiraCode_Nerd_Font:h14"
 vim.cmd('syntax enable')
 vim.opt.mouse="a"
+vim.opt.conceallevel = 2

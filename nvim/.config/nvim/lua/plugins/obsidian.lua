@@ -34,6 +34,9 @@ return {
 				date_format = "%Y-%m-%d-%a",
 				time_format = "%H:%M",
 			},
+			daily_notes={
+				folder="Vida Pessoal/Daily Notes",
+			},
 			ui = { 
 				enable = false 
 			},

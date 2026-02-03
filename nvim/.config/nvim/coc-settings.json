@@ -12,4 +12,7 @@
   "emmet.excludeLanguages": [],
   "snippets.ultisnips.pythonPrompt": false,
   "clangd.path": "/usr/bin/clangd",
+  "snippets.extends":{
+	  "markdown": ["tex"]
+  }
 }

@@ -1,13 +1,13 @@
 local M = {}
 
 -- ===============
--- Comando: NewAC1
+-- Comando: NewAEDSIII
 -- ===============
 
-function M.create_new_ac1()
+function M.create_new_aeds_iii()
 
 	local note_dir = string.format(
-		"~/obsidian/Estudos/Faculdade/4 Período/AC-I/%s",
+		"~/obsidian/Estudos/Faculdade/5 Período/AEDS-III/%s",
 		os.date("%Y-%m")
 	)
 
@@ -19,7 +19,7 @@ function M.create_new_ac1()
 
 	vim.cmd("edit " .. vim.fn.expand(file_path))
 
-	vim.cmd("ObsidianTemplate Arquitetura de Computadores I")
+	vim.cmd("ObsidianTemplate Algoritmos e Estruturas de Dados III")
 
 	print("Nova nota criada: " .. file_path)
 
@@ -27,7 +27,7 @@ function M.create_new_ac1()
 
 end
 
-vim.api.nvim_create_user_command("NewAC1",M.create_new_ac1,{})
+vim.api.nvim_create_user_command("NewAEDSIII",M.create_new_ac1,{})
 
 -- ==============
 -- Comando: NewLP

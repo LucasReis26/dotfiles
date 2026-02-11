@@ -27,7 +27,7 @@ function M.create_new_aeds_iii()
 
 end
 
-vim.api.nvim_create_user_command("NewAEDSIII",M.create_new_ac1,{})
+vim.api.nvim_create_user_command("NewAEDSIII",M.create_new_aeds_iii,{})
 
 -- ==============
 -- Comando: NewLP
@@ -36,7 +36,7 @@ vim.api.nvim_create_user_command("NewAEDSIII",M.create_new_ac1,{})
 function M.create_new_lp()
 
 	local note_dir = string.format(
-		"~/obsidian/Estudos/Faculdade/4 Período/LP/%s",
+		"~/obsidian/Estudos/Faculdade/5 Período/LP/%s",
 		os.date("%Y-%m")
 	)
 
@@ -57,5 +57,36 @@ function M.create_new_lp()
 end
 
 vim.api.nvim_create_user_command("NewLP",M.create_new_lp,{})
+
+
+-- ==============
+-- Comando: NewACII
+-- ==============
+
+function M.create_new_acii()
+
+	local note_dir = string.format(
+		"~/obsidian/Estudos/Faculdade/5 Período/AC-II/%s",
+		os.date("%Y-%m")
+	)
+
+	local file_path = string.format(
+		"%s/AULA %s.md",
+		note_dir,
+		os.date("%Y-%m-%d")
+	)
+
+	vim.cmd("edit " .. vim.fn.expand(file_path))
+
+	vim.cmd("ObsidianTemplate Arquitetura de Computadores II")
+
+	print("Nova nota criada: " .. file_path)
+
+	vim.cmd("write")
+
+end
+
+vim.api.nvim_create_user_command("NewACII",M.create_new_acii,{})
+
 
 return M

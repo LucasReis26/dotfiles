@@ -45,7 +45,7 @@ return {
 			folder="Vida Pessoal/Daily Notes",
 		},
 		ui = { 
-			enable = false 
+			enable = true 
 		},
 		disable_frontmatter = true,
 		-- see below for full list of options 👇

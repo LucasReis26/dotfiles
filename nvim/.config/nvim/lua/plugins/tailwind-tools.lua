@@ -3,6 +3,7 @@ return {
 	"luckasRanarison/tailwind-tools.nvim",
 	name = "tailwind-tools",
 	build = ":UpdateRemotePlugins",
+	enabled = false,
 	-- version = "*",
 	dependencies = {
 		"nvim-treesitter/nvim-treesitter",

@@ -25,12 +25,12 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		-- import your plugins
-		{"catppuccin/nvim", name = "catppuccin", priority = 1000, config = function() vim.cmd.colorscheme "catppuccin-mocha" end},
-		{ import = "plugins" },
-	},
-	-- Configure any other settings here. See the documentation for more details.
-	-- colorscheme that will be used when installing plugins.
-	install = { colorscheme = { "habamax" } },
-	-- automatically check for plugin updates
-	checker = { enabled = true },
+	{"catppuccin/nvim", name = "catppuccin", priority = 1000, dependencies = {"nvim-treesitter/nvim-treesitter"}, config = function() vim.cmd.colorscheme "catppuccin-mocha" integrations = {tresitter = true, native_lsp={enabled = true}} end},
+	{ import = "plugins" },
+},
+-- Configure any other settings here. See the documentation for more details.
+-- colorscheme that will be used when installing plugins.
+install = { colorscheme = { "habamax" } },
+-- automatically check for plugin updates
+checker = { enabled = true },
 })

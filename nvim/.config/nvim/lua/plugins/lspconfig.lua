@@ -34,6 +34,11 @@ return{
 			},
 			root_dir = vim.fs.root(0, { ".git", "compile_commands.json", "compile_flags.txt", ".clangd" }),
 		}
+		vim.lsp.config.html = {
+			capabilities = capabilities,
+			filetypes = { "html", "templ" },
+		}
+		vim.lsp.enable('html')
 		vim.lsp.enable('clangd')
 		vim.lsp.enable('emmet_ls')
 		vim.lsp.enable('jdtls')

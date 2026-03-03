@@ -38,6 +38,11 @@ return{
 			capabilities = capabilities,
 			filetypes = { "html", "templ" },
 		}
+		vim.lsp.config.texlab = {
+			capabilities = capabilities,
+			filetypes = {"tex", "markdown"},
+		}
+		vim.lsp.enable('texlab')
 		vim.lsp.enable('html')
 		vim.lsp.enable('clangd')
 		vim.lsp.enable('emmet_ls')

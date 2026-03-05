@@ -8,3 +8,4 @@ vim.o.guifont = "FiraCode_Nerd_Font:h14"
 vim.opt.mouse="a"
 vim.opt.conceallevel = 2
 vim.opt.linebreak = true
+vim.opt.cursorline = true

@@ -6,7 +6,7 @@ return {
 		integrations = {
 			markdown = {
 				only_render_image_at_cursor = true, -- defaults to false
-				only_render_image_at_cursor_mode = "popup", -- "popup" or "inline", defaults to "popup"
+				only_render_image_at_cursor_mode = "inline", -- "popup" or "inline", defaults to "popup"
 			}
 		},
 	}

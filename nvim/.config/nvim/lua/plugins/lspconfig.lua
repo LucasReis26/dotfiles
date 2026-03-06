@@ -42,6 +42,11 @@ return{
 			capabilities = capabilities,
 			filetypes = {"tex", "markdown"},
 		}
+		vim.lsp.config.biome = {
+			capabilities = capabilities,
+			filetypes = {"typescriptreact"}
+		}
+		vim.lsp.enable('biome')
 		vim.lsp.enable('texlab')
 		vim.lsp.enable('html')
 		vim.lsp.enable('clangd')

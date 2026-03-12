@@ -12,10 +12,13 @@ return {
       "markdown", "markdown_inline", "java", "cpp", "tsx", "typescript","html" 
     },
     sync_install = false,
-    auto_install = true,
+    auto_install = false,
     highlight = {
       enable = true,
-      additional_vim_regex_highlighting = false,
+			disable = function(lang,buf)
+				return lang == "latex" or lang == "tex"
+			end,
+			additional_vim_regex_highlighting = { "latex", "tex" },
     },
 	indent = {enable = true},
   },

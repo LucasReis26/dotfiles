@@ -2,7 +2,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   lazy = false,
-  version = "*",
+  branch = "main",
   -- Garante que o plugin carregue nos eventos certos
   event = { "BufReadPost", "BufNewFile" },
   opts = {

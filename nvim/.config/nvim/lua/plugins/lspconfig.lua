@@ -46,6 +46,11 @@ return{
 			capabilities = capabilities,
 			filetypes = {"typescriptreact"}
 		}
+		vim.lsp.config.eslint = {
+			capabilities = capabilities,
+			filetypes = {"typescriptreact"},
+		}
+		vim.lsp.enable('eslint')
 		vim.lsp.enable('biome')
 		vim.lsp.enable('texlab')
 		vim.lsp.enable('html')

@@ -49,7 +49,7 @@ return{
 		}
 		vim.lsp.config.eslint = {
 			capabilities = capabilities,
-			filetypes = {"typescriptreact","javascript"},
+			filetypes = {"typescriptreact","javascript","javascriptreact"},
 		}
 		vim.lsp.enable('eslint')
 		vim.lsp.enable('biome')

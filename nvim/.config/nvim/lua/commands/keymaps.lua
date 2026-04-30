@@ -9,6 +9,7 @@ vim.keymap.set('n','<leader>=','gg0vG$=')
 vim.keymap.set('n','<leader>nd',':NoiceDismiss<cr>')
 vim.keymap.set('n','<leader>oo',':ObsidianOpen<cr>')
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = "Code Actions" })
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
 
 vim.keymap.set('n','<esc>',function()
 	if vim.v.hlsearch == 1 then

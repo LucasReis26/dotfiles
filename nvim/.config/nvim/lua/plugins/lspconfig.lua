@@ -19,6 +19,7 @@ return{
 				"javascriptreact",
 				"css",
 				"markdown",
+				"javascript",
 			}
 		}
 		vim.lsp.config.clangd = {
@@ -36,7 +37,7 @@ return{
 		}
 		vim.lsp.config.html = {
 			capabilities = capabilities,
-			filetypes = { "html", "templ" },
+			filetypes = { "html", "templ", "javascript", "javascriptreact" },
 		}
 		vim.lsp.config.texlab = {
 			capabilities = capabilities,
@@ -48,7 +49,7 @@ return{
 		}
 		vim.lsp.config.eslint = {
 			capabilities = capabilities,
-			filetypes = {"typescriptreact"},
+			filetypes = {"typescriptreact","javascript"},
 		}
 		vim.lsp.enable('eslint')
 		vim.lsp.enable('biome')

@@ -23,3 +23,13 @@ vim.api.nvim_create_autocmd("TermOpen",{
 		vim.keymap.set('t','<c-t>',[[exit<cr>]])
 	end
 })
+
+-- Alternar entre tema claro (Latte) e escuro (Mocha)
+vim.keymap.set('n', '<leader>th', function()
+	if vim.g.colors_name == "catppuccin-latte" then
+		vim.cmd("colorscheme catppuccin-mocha")
+	else
+		vim.cmd("colorscheme catppuccin-latte")
+	end
+end, { desc = "Alternar entre tema Claro/Escuro" })
+

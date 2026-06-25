@@ -21,11 +21,14 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+local theme_sync = require("commands.theme-sync")
+local initial_theme = theme_sync.get_kitty_theme()
+
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
 		-- import your plugins
-	{"catppuccin/nvim", name = "catppuccin", priority = 1000, dependencies = {"nvim-treesitter/nvim-treesitter"}, config = function() vim.cmd.colorscheme "catppuccin-mocha" integrations = {tresitter = true, native_lsp={enabled = true}} end},
+	{"catppuccin/nvim", name = "catppuccin", priority = 1000, dependencies = {"nvim-treesitter/nvim-treesitter"}, config = function() vim.cmd.colorscheme(initial_theme) integrations = {tresitter = true, native_lsp={enabled = true}} end},
 	{ import = "plugins" },
 },
 -- Configure any other settings here. See the documentation for more details.

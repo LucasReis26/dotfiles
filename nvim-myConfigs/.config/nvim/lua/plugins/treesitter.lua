@@ -15,12 +15,13 @@ return {
     auto_install = false,
     highlight = {
       enable = true,
-			disable = function(lang,buf)
-				return lang == "latex" or lang == "tex"
-			end,
-			additional_vim_regex_highlighting = { "latex", "tex" },
+      disable = function(lang, buf)
+        return lang == "latex" or lang == "tex"
+      end,
+      additional_vim_regex_highlighting = { "latex", "tex" },
     },
-	indent = {enable = true},
+    -- Desabilita a indentação experimental do treesitter que causa problemas em C/C++ e outras linguagens
+    indent = { enable = true },
   },
   config = function(_, opts)
     -- Isso resolve o problema do LaTeX com o seu tree-sitter CLI 0.26.3

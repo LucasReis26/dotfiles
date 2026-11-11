@@ -7,12 +7,12 @@ return {
     legacy_commands = false, -- this will be removed in 4.0.0
     workspaces = {
       {
-        name = "Faculdade",
-        path = "~/Insync/luctreis@gmail.com/Google Drive/myNotes/Faculdade/",
-      },
-      {
         name = "Pessoal",
         path = "~/Insync/luctreis@gmail.com/Google Drive/myNotes/Pessoal/",
+      },
+      {
+        name = "Faculdade",
+        path = "~/Insync/luctreis@gmail.com/Google Drive/myNotes/Faculdade/",
       },
     },
     notes_subdir = "Inbox",

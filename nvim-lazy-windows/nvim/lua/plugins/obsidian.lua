@@ -9,10 +9,12 @@ return {
       {
         name = "Pessoal",
         path = "~/Insync/luctreis@gmail.com/Google Drive/myNotes/Pessoal/",
+        strict = true,
       },
       {
         name = "Faculdade",
         path = "~/Insync/luctreis@gmail.com/Google Drive/myNotes/Faculdade/",
+        strict = true,
       },
     },
     notes_subdir = "Inbox",
